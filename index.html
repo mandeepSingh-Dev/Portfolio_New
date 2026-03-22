@@ -1319,7 +1319,7 @@
     .sd-4 { transition-delay: 0.28s !important; }
       .projects-grid { grid-template-columns: repeat(2, 1fr); }
       .exp-grid { grid-template-columns: 1fr; }
-    }
+    
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; }
       .hero-left { padding: 60px 30px; border-right: none; border-bottom: 1px solid var(--border); }
@@ -1373,7 +1373,7 @@
     </div>
 
     <div class="nav-right">
-      <button class="btn-cv">Download CV</button>
+      <a class="btn-cv" href="https://raw.githubusercontent.com/mandeepSingh-Dev/Portfolio_New/main/Mandeep_Resume1.pdf" target="_blank" rel="noopener" download="Mandeep_Resume.pdf">Download CV</a>
     </div>
   </nav>
 
@@ -2432,9 +2432,7 @@
     // ══════════════════════════════════════════════════
     // 9. MISC
     // ══════════════════════════════════════════════════
-    document.querySelector('.btn-cv').addEventListener('click', () => {
-      alert('CV download would trigger here.');
-    });
+    // CV button is now a direct download link — no JS needed
 
     // ── Subtle parallax on hero text via mouse ──
     document.addEventListener('mousemove', (e) => {
@@ -2510,7 +2508,7 @@
     });
 
     // ══════════════════════════════════════════════════
-    // 15. PARALLAX SECTION BACKGROUNDS ON SCROLL
+    // 15. PARALLAX SECTION BACKGROUNDS ON SCROLLL
     // ══════════════════════════════════════════════════
     const parallaxSections = document.querySelectorAll('.projects-section, .skills-section, .experience-section');
     window.addEventListener('scroll', () => {
@@ -2526,4 +2524,3 @@
   </script>
 </body>
 </html>
-git 
